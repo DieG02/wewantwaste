@@ -2,10 +2,11 @@ export interface Skip {
   id: string;
   name: string;
   size: number;
+  image: string;
   price: number;
   hirePeriod: number;
-  onRoad?: boolean;
-  heavyWaste: boolean;
+  notAllowedOnRoad?: boolean;
+  allowsHeavyWaste: boolean;
 }
 
 export interface SkipResponse {

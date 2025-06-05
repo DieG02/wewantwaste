@@ -1,3 +1,4 @@
+import type { Skip } from "./api";
 export interface SkipCardProps {
   skip: Skip;
   selected: boolean;
