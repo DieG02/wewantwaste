@@ -31,7 +31,7 @@ const SelectionToast = ({ skip, onClear }: SelectionToastProps) => {
                   </span>
                   <span className="text-sm text-indigo-600">inc.VAT</span>
                 </div>
-                <div className="text-sm text-gray-500 mt-1">
+                <div className="text-sm text-gray-500 mt-1 hidden sm:block">
                   Available for {skip.hirePeriod} days hire
                 </div>
               </div>
