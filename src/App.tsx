@@ -23,11 +23,11 @@ function App() {
       <Header />
 
       <main className="flex-1 container mx-auto px-4 py-8 max-w-7xl">
-        <div className="text-center my-24">
-          <h1 className="text-3xl md:text-4xl font-bold text-gray-800 mb-2">
+        <div className="text-center my-8 sm:my-12 md:my-20">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-800 mb-2">
             Choose Your Skip Size
           </h1>
-          <p className="text-gray-500 text-lg">
+          <p className="text-gray-500 text-md sm:text-lg">
             Select the skip size that best suits your needs
           </p>
         </div>

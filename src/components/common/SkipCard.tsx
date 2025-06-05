@@ -2,15 +2,13 @@ import { ArrowRight, Check } from "lucide-react";
 import type { SkipCardProps } from "../../types";
 
 const SkipCard = ({ skip, selected, onSelect }: SkipCardProps) => {
+  const skipTitle = `${skip.size} Yard Skip`;
   const formatPrice = (price: number) => {
     return new Intl.NumberFormat("en-GB", {
       style: "currency",
       currency: "GBP",
     }).format(price);
   };
-
-  const skipTitle = `${skip.size} Yard Skip`;
-  console.log(skip, formatPrice(skip.price));
 
   return (
     <div
@@ -35,28 +33,9 @@ const SkipCard = ({ skip, selected, onSelect }: SkipCardProps) => {
       <div className="p-4">
         <h3 className="text-lg font-bold text-gray-800 mb-2">{skipTitle}</h3>
 
-        {/* <div className="flex items-center mb-3">
-          <span className="bg-indigo-50 text-indigo-600 px-2 py-1 rounded-lg text-sm">
-            {skip.hirePeriod} days hire period
-          </span>
-        </div> */}
-
         <p className="text-gray-600 text-sm mb-4">
           {skip.hirePeriod} days hire period
         </p>
-
-        {/* {skip.suitable_for && skip.suitable_for.length > 0 && (
-          <div className="mb-4 flex flex-wrap gap-2">
-            {skip.suitable_for.map((item: any, index: number) => (
-              <span
-                key={index}
-                className="bg-gray-50 text-gray-600 px-2 py-1 rounded-lg text-xs"
-              >
-                {item}
-              </span>
-            ))}
-          </div>
-        )} */}
 
         <div className="flex gap-2 mb-4">
           {skip.allowsHeavyWaste && (
